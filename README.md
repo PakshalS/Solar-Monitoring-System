@@ -23,3 +23,4 @@ Requirements:
 Future Scope and advancement:
 One can add a prediction feature of how much revenue will be generated in future according to the data collected by sensors.As increasing in the application of solar panels 
 the monitoring systems will also be in a great demand.
+![WhatsApp Image 2023-05-30 at 18 51 23](https://github.com/PakshalS/Solar-Monitoring-System/assets/110221213/4d664d4a-7cff-408a-a71e-4d27fc748ed4)
