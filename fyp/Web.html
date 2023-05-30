@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Final Year Project</title>
+	 <!-- for font icons -->
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+
+.login-box form button{
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.login-box button:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}
+
+.login-box button span {
+  position: absolute;
+  display: block;
+}
+
+.login-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #03e9f4);
+  animation: mymove1 1s linear infinite;
+  animation-delay: 0.1s;
+}
+
+@keyframes mymove1 {
+  from {
+    left: -100%;
+  }
+  to{
+    left: 100%;
+  }
+}
+
+.login-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #03e9f4);
+  animation: mymove2 1s linear infinite;
+  animation-delay: .6s
+}
+
+@keyframes mymove2 {
+  from {
+    top: -100%;
+  }
+  to{
+    top: 100%;
+  }
+}
+
+.login-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: mymove3 1s linear infinite;
+  animation-delay: .8s
+}
+
+@keyframes mymove3 {
+  from{
+    right: -100%;
+  }
+  to{
+    right: 100%;
+  }
+}
+
+.login-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: mymove4 1s linear infinite;
+  animation-delay: 1s;
+}
+
+@keyframes mymove4{
+  from{
+    bottom: -100%;
+  }
+  to{
+    bottom: 100%;
+  }
+}
+
+button{
+  border: none;
+  background: transparent;
+}
+
+</style>
+<body style="margin:0">
+	
+<!-- Start Header -->
+<table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#03e9f4">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="13" cellspacing="0" align="center">
+           <tr>
+           	   <td width="65%">
+           	   	  <font face="arial" color="black" size="5" style="margin-bottom: 15px;">
+           	       <strong>Solar Monitoring System</strong>
+           	      </font>
+           	   </td>
+           	   <td width="10%">&nbsp;</td>
+				  <td><a href="#about">
+					<font face="arial" color="#050505" size="3">
+						<strong>About</strong>
+			  </font></a>
+		       </td>
+			   <td><a href="#contact">
+				<font face="arial" color="#050505" size="3">
+			<strong>Help</strong>
+			 </font></a>
+			</td>
+           	   <td><a href="#home">
+           	   	  <font face="arial" color="#050505" size="3">
+					<strong>Home</strong>
+           	     </font></a>
+           	   </td>
+           	   <td><a href="#portfolio">
+				<font face="arial" color="#050505" size="3">
+					<strong>Data</strong>
+		  </font></a>
+           </tr>
+  	 	</table>
+  	 </td>
+  </tr>
+</table>
+<!-- End Header -->
+
+
+
+
+<!-- Start Home -->
+<table border="0" id="home" width="100%" cellpadding="0" cellspacing="0" bgcolor="#243b55">
+	<tr>
+		 <td>
+			 <table border="0"  width="100%" cellpadding="15" cellspacing="0" align="center">
+			 <tr>
+					<td align="center" valign="top" height="300" >
+						<h3>
+							<font face="arial" size="7" color=" #ffffff">
+								SAVINGS MADE
+							   </font>
+					   </h3>
+				
+						<h3>
+							<font face="arial" size="4" color=" #ffffff">
+								Cost in regular : 4.5 Rs / KwH
+							   </font>
+							</h3>
+						<h3>
+							<font face="arial" size="4" color=" #ffffff">
+								Money Saved:
+							   </font>
+						</h3>
+						<h1><font face="arial" size="10" color=" #ffffff">
+							<iframe src="https://thingspeak.com/channels/2033368/widgets/627353" height="225" width="350" title="Iframe Example"></iframe>
+						   </font></h1>
+							
+						
+					</td>
+			 </tr>
+		  </table>
+		</td>
+	  </tr>
+   </table>
+  <!-- End Home -->
+
+<!-- Start Portfolio -->
+<table border="0" id="portfolio" width="100%" cellpadding="0" cellspacing="0" bgcolor="#243b55">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+  	 	<!-- Heading Start-->
+          <tr>
+           	  <td height="160" align="center" valign="middle" colspan="3">
+           	  	 <font face="arial" size="8" color=" #03e9f4">
+           	  	   PANEL DATA
+           	  	</font>
+           	  	<hr width="70" color="#fff">
+           	  </td>
+          </tr>
+        <!-- Heading  End-->
+         <tr>
+         	<td width="33.33%" valign="top">
+         	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+         	  	<tr>
+         	  		<td>
+         	  			<font face="arial" size="5" color="#ffffff">
+         	  			Light
+         	  		   </font>
+         	  		   <br/>
+         	  		   <br/>
+					   <font face="arial" size="4" color="#03e9f4">
+						Normal level :5000 or above
+					   </font>
+         	  		   <br/><br/>
+                       <iframe src="https://thingspeak.com/channels/2033368/charts/1?bgcolor=%23ffffff&color=%23243b55&dynamic=true&results=10&title=Light+Intensity&type=line" style="height:300px;width:430px;" title="Iframe Example"></iframe>
+         	  		</td>
+         	  	</tr>
+         	  </table>	
+         	</td>
+         	
+         	<td width="33.33%" valign="top">
+         	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+         	  	<tr>
+         	  		<td>
+         	  			<font face="arial" size="5" color="#ffffff">
+         	  			Battery storage
+         	  		   </font>
+         	  		   <br/>
+         	  		   <br/>
+         	  		   <font face="arial" size="4" color="#03e9f4">
+         	  			Normal level : above 30%
+         	  		   </font>
+         	  		   <br/><br/>
+						  <iframe src="https://thingspeak.com/channels/2033368/widgets/622835" style="height:300px;width:430px;" title="Iframe Example"></iframe/>
+         	  		</td>
+         	  	</tr>
+         	  </table>	
+         	</td>
+
+         	<td width="33.33%" valign="top">
+         	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+         	  	<tr>
+         	  		<td>
+         	  			<font face="arial" size="5" color="#ffffff">
+         	  			System Temperature
+         	  		   </font>
+         	  		   <br/>
+         	  		   <br/>
+         	  		   <font face="arial" size="4" color="#03e9f4">
+         	  			Normal level: 30-36
+         	  		   </font>
+         	  		   <br/><br/>
+						  <iframe src="https://thingspeak.com/channels/2033368/widgets/622834" style="height:300px;width:430px;" title="Iframe Example"></iframe/>
+         	  		</td>
+         	  	</tr>
+         	  </table>	
+         	</td>
+         </tr>
+          <tr>
+         	<td width="33.33%" valign="top">
+         	  <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+         	  	<tr>
+         	  		<td>
+         	  			<font face="arial" size="5" color="#ffffff">
+         	  			Battery 
+         	  		   </font>
+         	  		   <br/>
+         	  		   <br/>
+         	  		   <font face="arial" size="4" color="#03e9f4">
+         	  			Normal value: 30-40
+         	  		   </font>
+         	  		   <br/><br/>
+						  <iframe src="https://thingspeak.com/channels/2033368/charts/4?bgcolor=%23ffffff&color=%23243b55&dynamic=true&results=10&title=Battery&type=line" style="height:300px;width:430px;" title="Iframe Example"></iframe/>
+         	  		</td>
+         	  	</tr>
+         	  </table>	
+         	</td>
+         	
+
+         	<td width="33.33%" valign="top">
+				<table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+					<tr>
+						<td>
+							<font face="arial" size="5" color="#ffffff">
+							Power generation
+						   </font>
+						   <br/>
+						   <br/>
+						   <font face="arial" size="4" color="#03e9f4">
+							OFF = Yellow 
+						   </font>
+						   <br/><br/>
+						 <iframe src="https://thingspeak.com/channels/2033368/widgets/608327" style="height:300px;width:430px;" title="Iframe Example"></iframe>
+						</td>
+					</tr>
+				</table>	
+			  </td>
+ 
+			  <td width="33.33%" valign="top">
+				<table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#353535">
+					<tr>
+						<td>
+							<font face="arial" size="5" color="#ffffff">
+							 Battery Low Indicator
+						   </font>
+						   <br/>
+						   <br/>
+						   <font face="arial" size="4" color="#03e9f4">
+							Low = Red 
+						   </font>
+						   <br/><br/>
+						   <iframe src="https://thingspeak.com/channels/2033368/widgets/625965" style="height:300px;width:430px;" title="Iframe Example"></iframe>	
+						</td>
+					</tr>
+				</table>	
+			  </td>
+         </tr>
+        <!-- section padding bottom -->
+           <tr>
+           	  <td height="60" colspan="3">
+                 
+           	  </td>
+           </tr>
+          <!-- section padding bottom End-->
+       </table>
+     </td>
+   </tr>
+</table>
+<!-- End Portfolio -->
+
+
+<!-- Start About -->
+<table border="0" id="about" width="100%" cellpadding="0" cellspacing="0" bgcolor="#243b55">
+	<tr>
+		 <td>
+			 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+				 <!-- Heading Start-->
+			 <tr>
+				   <td height="160" align="center" valign="middle" colspan="2">
+						<font face="arial" size="8" color=" #03e9f4">
+						  About
+					   </font>
+					   <hr width="70" color="#fff">
+				   </td>
+			 </tr>
+			 <!-- Heading  End-->
+			 <tr>
+					
+					<td width="65%" valign="top">
+						  <table border="0" width="100%" cellpadding="0" cellspacing="0" align="center">
+								<tr>
+									 <td height="40">
+										 <font face="arial" size="5" color=" #ffffff">
+										 Hi admin,
+										</font>
+									 </td>
+								</tr>
+								
+									<td>
+										<p>
+											<font face="arial" size="4" color="#c2c0c3">
+												A solar monitoring system is a type of system that is used to monitor the performance and output of a solar panel or an array of solar panels. The system typically consists of sensors that measure various parameters such as temperature, light intensity, voltage, and current. The data collected by these sensors is then processed and analyzed to provide information about the performance and efficiency of the solar panels.
+  
+										</font>
+										</p>
+										<p>
+											<font face="arial" size="4" color="#c2c0c3">
+												Solar monitoring systems are used in a variety of applications, including residential, commercial, and industrial solar installations. By monitoring the performance of the solar panels, the system can provide valuable insights into their performance, which can be used to optimize their efficiency and maximize their output.  
+										</font>
+										</p>
+										
+										<p>
+											<font face="arial" size="4" color="#c2c0c3">
+												This paper will discuss the various components of a solar monitoring system, including the sensors used to measure different parameters, the data processing and analysis techniques used to derive meaningful insights from the collected data, and the applications of solar monitoring systems in various industries.   
+										</font>
+										</p>
+										<p>
+											<font face="arial" size="4" color="#c2c0c3">
+												The scope of a solar monitoring system project can be quite broad, depending on the specific goals and requirements of the system. At a high level, the scope of the project may include the installation and integration of sensors and monitoring equipment on solar panels, as well as the development and deployment of software to collect and analyze data from these sensors.
+
+												The project may also involve the integration of other hardware components, such as microcontrollers, WiFi modules, and LCD displays, to enable data visualization and communication with the system. Additionally, the project may involve the development of a web or mobile application to enable users to access and interact with the data collected by the monitoring system.
+												
+												In terms of the specific functionalities and features of the system, the scope of the project may include real-time monitoring of energy production, fault detection and diagnosis, predictive maintenance, energy efficiency optimization, and remote management and control of the solar panel system. The scope may also include the development of reporting and analytics capabilities to enable users to gain insights into the performance of the system over time.. 
+																						</font>
+										</p>
+										<hr noshade>
+										<br/>
+									
+									</td>
+								</tr>
+						  </table>  
+					</td>
+			 </tr>
+			<!-- section padding bottom -->
+			 <tr>
+				   <td height="60" colspan="2">
+				   
+				   </td>
+			 </tr>
+			<!-- section padding bottom End-->
+		  </table>
+		</td>
+	 </tr>
+  </table>
+  <!-- End About -->
+  
+  <!-- Start Contact -->
+
+<table border="0" id="contact" width="100%" cellpadding="0" cellspacing="0" bgcolor="#243b55">
+	<tr>
+		 <td>
+			 <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+			 <!-- Heading Start-->
+			<tr>
+				   <td height="160" align="center" valign="middle">
+						<font face="arial" size="8" color=" #03e9f4">
+						  Help
+					   </font>
+					   <hr width="70" color="#ffffff">
+				   </td>
+			</tr>
+		  <!-- Heading  End-->
+		  <tr>
+			  <td align="center" valign="top">
+				<table border="0" width="55%" cellpadding="20" cellspacing="0" align="center" bgcolor="#243b55">
+					<tr>
+						<td>
+				 <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center" bgcolor="#243b55">
+				    <tr>
+						<td width="30%">
+							<font face="arial" size="4" color="#ffffff">
+								Name
+							</font>
+							
+					   </td>
+					   <td width="70%">
+						   <textarea cols="51" rows="4"></textarea>
+					   </td>
+					</tr>
+				   <tr>
+					<td width="30%">
+						<font face="arial" size="4" color="#ffffff">
+						Email
+						</font>
+						
+				   </td>
+				   <td width="70%">
+					   <textarea cols="51" rows="4"></textarea>
+				   </td>
+				</tr>
+				   <tr>
+					<td width="30%">
+						<font face="arial" size="4" color="#ffffff">
+						Subject
+						</font>
+						
+				   </td>
+				   <td width="70%">
+					   <textarea cols="51" rows="4"></textarea>
+				   </td>
+				</tr>
+  
+				   <tr>
+					   <td width="30%">
+						   <font face="arial" size="4" color="#ffffff">
+							Message
+						   </font>
+						   
+					  </td>
+					  <td width="70%">
+						  <textarea cols="51" rows="4"></textarea>
+					  </td>
+				   </tr>
+				   <tr>
+					   <td width="30%">
+						   &nbsp;
+					  </td>
+					  <td width="70%">
+						  
+						<div class="login-box">
+							<form action="" method=""> 
+							  <button>
+								<span></span>
+								<span></span>
+								<span></span>
+								<span></span>
+								submit
+							  </button>
+							</form>
+						  </div>
+						  
+					  </td>
+  
+				   </tr>
+  
+				 </table>
+			  </td>
+		  </tr>
+	  </table>
+			  </td>
+		  </tr>
+		  <!-- section padding bottom -->
+			 <tr>
+				   <td height="60">
+				   
+				   </td>
+			 </tr>
+			<!-- section padding bottom End-->
+		 </table>
+		</td>
+	  </tr>
+  </table>
+  <!-- End Contact -->
+  
+
+<!-- Start Footer -->
+ <table border="0" width="100%" cellpadding="0" cellspacing="0" bgcolor="#243b55">
+  <tr>
+  	 <td>
+  	 	<table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+  	 	
+  	 	<tr>
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#03e9f4" size="6">
+  	 		   	 			<span class="fa fa-phone"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">
+  	 		   	 		Phone No
+  	 		   	 	    </font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">
+  	 		   	 	    	+91 9892907160
+  	 		   	 	     </font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#03e9f4" size="6">
+  	 		   	 			<span class="fa fa-envelope"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">
+  	 		   	 		Email
+  	 		   	 	    </font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">
+  	 		   	 	    	solarsupport@gmail.com
+  	 		   	 	     </font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+
+  	 		<td width="33.33%" valign="top">
+  	 		   <table border="0" width="100%" cellpadding="15" cellspacing="0" align="center">
+  	 		   	 <tr>
+  	 		   	 	<td align="center" valign="top">
+  	 		   	 		<font color="#03e9f4" size="6">
+  	 		   	 			<span class="fa fa-map-marker"></span>
+  	 		   	 		</font>
+  	 		   	 		<br/><br/>
+  	 		   	 		<font color="#ffffff" size="5" face="arial">
+  	 		   	 		Location
+  	 		   	 	    </font>
+  	 		   	 	    <p>
+  	 		   	 	      <font color="#c2c0c3" size="3" face="arial">
+                            Bhayander(West)
+ </font>
+  	 		   	 	    </p>
+  	 		   	 	</td>
+  	 		   	 </tr>
+  	 		   </table>
+  	 		</td>
+  	 	</tr>
+  	 	<tr>
+  	 		<td colspan="3">
+  	 			<hr noshade>
+  	 		</td>
+  	 	</tr>
+  	 	<tr>
+  	 		<td colspan="5" height="100" valign="top">
+  	 			<table border="0" width="40%" cellpadding="0" cellspacing="0" align="center">
+  	 				
+  	 				
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#03e9f4">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="https://www.instagram.com/_.pakshal._/">
+  	 					 				<font size="5" color="#050505">
+  	 					 				<span class="fa fa-instagram"></span>
+  	 					 			   </font>
+  	 					 			</a>
+  	 					 			</td>
+  	 					 		</tr>
+  	 					 	
+  	 					 	</table>
+  	 					 </td>
+                            <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#03e9f4">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="https://www.linkedin.com/in/pakshal-shah-946368244/">
+  	 					 				<font size="5" color="#050505">
+  	 					 				<span class="fa fa-linkedin"></span>
+  	 					 			   </font>
+  	 					 			</a>
+  	 					 			</td>
+  	 					 		</tr>
+  	 					 	
+  	 					 	</table>
+  	 					 </td>
+                        </td>
+                        <td width="25%" align="center">
+                            <table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#03e9f4">
+                                <tr>
+                                    <td align="center" valign="middle">
+                                        <a href="https://github.com/PakshalS">
+                                        <font size="5" color="#050505">
+                                        <span class="fa fa-github"></span>
+                                       </font>
+                                    </a>
+                                    </td>
+                                </tr>
+                            
+                            </table>
+                        </td>
+  	 					
+  	 					 <td width="25%" align="center">
+  	 					 	<table border="0" width="50" cellpadding="0" cellspacing="0" align="center" height="50" bgcolor="#03e9f4">
+  	 					 		<tr>
+  	 					 			<td align="center" valign="middle">
+  	 					 				<a href="https://twitter.com/pakshalhere">
+  	 					 				<font size="5" color="#050505">
+  	 					 				<span class="fa fa-twitter"></span>
+  	 					 			   </font>
+  	 					 			   </a>
+  	 					 			</td>
+  	 					 		</tr>
+
+  	 					 	</table>
+  	 					 </td>
+  	 				</tr>
+  	 			</table>
+  	 		</td>
+  	 	</tr>
+  	 	</table>
+  	</td>
+  </tr>
+ </table>
+<!-- End Footer -->
+</body>
+</html>
